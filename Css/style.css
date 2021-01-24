@@ -1,6 +1,7 @@
 /* Gerais */
 body{
     font-family: "Roboto", sans-serif;
+    
 }
 
 .row{
@@ -47,6 +48,8 @@ header, .navbar{
     border: 3px solid #cf974f;
     background-color: #cf974f;
     border-radius: 15px;
+    transition: .5s;
+    
 }
 .navbar-nav > .nav-item > #contact-menu:hover{
     border: 3px solid #cf974f;
@@ -54,3 +57,107 @@ header, .navbar{
 }
 
 
+/* Slider */
+.container-fluid{
+    padding: 0;
+}
+
+#mainSlier .carousel-inner, #mainSlider .carousel-item {
+    height: 90vh;
+}
+
+#mainSlider .carousel-caption{
+    top: 30%;
+}
+
+#mainSlider .carousel-caption h2{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+#mainSlider .carousel-caption p{
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 100px;
+    color:#fff;
+
+}
+
+.main-btn{
+    border: 3px solid #cf974f;
+    color: #fff;
+    background-color: #cf974f;
+    text-transform: uppercase;
+    width: 200px;
+    height: 60px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: .5s;
+    
+}
+
+.main-btn:hover{
+    background-color: transparent;
+    color: #fff;
+}
+
+.carousel-indicators .active{
+    background-color: #cf974f;
+}
+
+/* Sobre a empresa */
+
+#about{
+    background-color: #f9f9f9;
+}
+
+.main-title{
+    color: #444;
+    margin: 20px 0 65px 0;
+    font-size: 40px;
+    text-align: center;
+}
+
+.about-title{
+    margin-top: 30px;
+    font-size: 17px;
+    color: #444;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+#about p{
+    line-height: 20px;
+}
+
+#local-button{
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid #cf974f;
+    background-color: #cf974f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 15px;
+    
+}
+#local-button:hover{
+    color: #444;
+    background-color: transparent;
+}
+
+#about-list{
+    list-style: none;
+    padding-left: 0;
+}
+
+#about-list li{
+    line-height: 30px;
+    float: left;
+    margin: 10px;
+}
+
+#about-list i{
+    color: #cf974f;
+}

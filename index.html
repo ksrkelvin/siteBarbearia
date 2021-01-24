@@ -28,7 +28,7 @@
         <div class="container" id="nav-container">
             <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
                 <div class="container-fluid">
-                    <a href="#home" class="navbar-brand">
+                    <a href="#mainSlider" class="navbar-brand">
                         <img id="logo" src="/Assets/Icons/logo.png">BARBEARIA CORTE MIL GRAU
                     </a>
                     
@@ -39,7 +39,7 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a href="#home" class="nav-link" id="home-menu">HOME</a>
+                                <a href="#mainSlider" class="nav-link" id="home-menu">HOME</a>
                             </li>
                             
                             <li class="nav-item">
@@ -70,53 +70,89 @@
     </header>
 
     <main>
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="container-fluid">
+        <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
             <ol class="carousel-indicators">
-              <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
-              <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
-              <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+              <li data-bs-target="#mainSlider" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#mainSlider" data-bs-slide-to="1"></li>
+              <li data-bs-target="#mainSlider" data-bs-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="/Assets/Pictures/salao2.jpeg" class="d-block w-100" alt="Bem vindo">
+                <img src="/Assets/Pictures/entrada.JPG" class="d-block w-100" alt="Bem vindo">
                 <div class="carousel-caption d-none d-md-block">
-                  <h2></h5>
-                  <h4>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                  <h2>Bem-vindo a Barbearia Corte Mil grau</h5>
+                  <p>Homens de verdade, vão a barbearias de verdade</h4>
                 </div>
               </div>
+
               <div class="carousel-item">
-                <img src="Assets/Pictures/mesa-de-bilhar.jpeg" class="d-block w-100" alt="galeria">
+                <img src="Assets/Pictures/mesa_bilharflach.JPG" class="d-block w-100" alt="galeria">
                 <div class="carousel-caption d-none d-md-block">
                   <h2>Barba, Cabelo e Cerveja</h5>
-                  <h4>Ótimo lugar para dar aquele trato no visual</p>
-                  <h4>Mesa de bilhar, Cerveja e Som de qualidade para relachar</p>
+                  <p>Ótimo lugar para dar aquele trato no visual</p>
+                  <p>Mesa de bilhar, Cerveja e Som de qualidade para relachar</p>
                 </div>
               </div>
+
               <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
+                <img src="/Assets/Pictures/tesoura-guardada.JPG" class="d-block w-100" alt="Contato">
                 <div class="carousel-caption d-none d-md-block">
-                  <h2>Third slide label</h5>
-                  <h4>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                  <h2>Entre em contanto e agende um horario</h5>
+                  <a href="#contato" class="main-btn"> Agendar um horario</a>
                 </div>
               </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+
+            <a class="carousel-control-prev" href="#mainSlider" role="button" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+            <a class="carousel-control-next" href="#mainSlider" role="button" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </a>
+        </div>
+
+        <div id="about">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h3 class="main-title" >Saiba mais</h3>
+              </div>
+              
+              <div class="col-md-6">
+                <img class="img-fluid"src="/Assets/Pictures/salao00.JPG" alt="salao">
+              </div>
+
+              <div class="col-md-6">
+                <h3 class="about-title">Funcionamento</h3>
+                <p>Segunda: das 09:00 às 18:00 </p>
+                <p>Terça a Sexta: das 08:30 as 18:00</p>
+                <p>Sabado: das 08:00 as 17:00</p>
+                
+                <h3 class="about-title">Localização</h3>
+                <p>R. Barão de Jacareí, N° 535 - Centro, Jacareí - SP, 12308-000 <a id="local-button" href="https://www.google.com/maps/dir//Barbearia+Corte+Mil+Grau+-+R.+Bar%C3%A3o+de+Jacare%C3%AD,+N%C2%B0+535+-+Centro,+Jacare%C3%AD+-+SP,+12308-000/@-23.3029645,-45.9969013,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x94cdcbcc9a1d9477:0xf7319ac8ab3c477f!2m2!1d-45.9618818!2d-23.3029684">Como Chegar</a></p>
+                             
+                
+                <h3 class="about-title">Desde 2018 trabalhando com:</h3>
+                <ul id="about-list">
+                  <li><i class="fas fa-check"></i> Qualidade</li>
+                  <li><i class="fas fa-check"></i> Excelência</li>
+                  <li><i class="fas fa-check"></i> Conforto</li>
+                  <li><i class="fas fa-check"></i> Tradição</li>
+                  <li><i class="fas fa-check"></i> Compromisso</li>
+                </ul>
+              </div>
+
+
+            </div>
           </div>
+        </div>
+
+      </div>
     </main>
 
-    <section id="home">HOME</section>
-    <section id="about">A BARBEARIA</section>
-    <section id="services">SERVIÇOS</section>
-    <section id="galery">GALERIA</section>
-    <section id="barbers">BARBEIROS</section>
-    <section id="contact">CONTACT</section>
 
 
 
