@@ -140,6 +140,11 @@ header, .navbar{
     text-decoration: none;
     border-radius: 15px;   
 }
+
+#local-button i{
+    margin-left: 5px;
+}
+
 #local-button:hover{
     color: #444;
     background-color: transparent;
@@ -164,7 +169,6 @@ header, .navbar{
 /* Serviços */
 
 #services{
-    border-bottom: 1px solid #333;
     background-color: #444;
 }
 
@@ -196,6 +200,8 @@ header, .navbar{
     color: #cf974f;
 }
 
+
+
 /* Time */
 #barbers{
     background-color: #f9f9f9;
@@ -220,3 +226,52 @@ header, .navbar{
 .card-body a:hover > i{
     color: #cf974f;
 }
+
+
+/* Galeria */
+#galery{
+    background-color: #444;
+    border-bottom: 1px solid #333;
+}
+
+#galery, #galery p, #galery h3{
+    color: #fff;
+}
+
+.galery-box{
+    margin-bottom:30px;
+}
+
+#filter-btn-box{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#galery .filter-btn:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+#galery .filter-btn{
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: transparent;
+    border-radius: 30px;
+    text-transform: none;
+    margin: 0 15px;
+    min-width: 100px;
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+
+}
+
+
+#galery .filter-btn.active, #galery .filter-btn:hover{
+    color:#fff;
+    background-color: #cf974f;
+    border-color: #cf974f;
+    
+}
+
