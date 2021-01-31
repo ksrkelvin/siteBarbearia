@@ -1,4 +1,8 @@
 /* Gerais */
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: "Roboto", sans-serif;
     
@@ -17,6 +21,11 @@ p, li {
 
 header, .navbar{
     background-color: #393939;
+}
+
+.navbar{
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 #navcontainer{
@@ -68,7 +77,7 @@ header, .navbar{
 
 #mainSlider .carousel-caption{
     top: 30%;
-    text-shadow: 1.5px 1.5px black;
+    text-shadow: 2px 2px black;
 }
 
 #mainSlider .carousel-caption h2{
@@ -374,6 +383,7 @@ header, .navbar{
 
 @media (max-width: 768px){
     /* geral */
+
     .container{
         padding: 20px 0;
     }
@@ -416,3 +426,104 @@ header, .navbar{
     }
 
 }    
+
+@media(max-width: 425px){
+   
+    /* Slider */
+    #mainSlider{
+        margin-top: 90px;
+    }
+
+    #mainSlider .carrousel-caption{
+        top: 5%;
+    }
+
+    #mainSlider .carousel-caption h2{
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    #mainSlider .carousel-caption p{
+        display: none;
+    }
+
+    /* About */
+
+    .main-title{
+        font-size: 30px;
+    }
+
+    #about img{
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+    #local-button {
+        line-height: 40px;
+    }
+
+    #about-list li{
+        margin: 10px;
+        padding:0;
+        line-height: 25px;
+    }
+
+    /* Time */
+
+    #barbers .col-md-4{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    /* Galeria */
+
+    #galery .filter-btn{
+        margin-bottom: 20px;
+    }
+
+    /* Contato */
+
+    .contact-box{
+        border: none;
+        margin-bottom: 0;
+    }
+    #contact-title h5{
+        font-size: 30px;
+
+    }
+
+    #contact-title h6{
+        font-size: 25px;
+
+    }
+
+}
+
+@media(max-width: 375px){
+
+    /* geral */
+    p{
+        font-size: 18px;
+    }
+
+    /* Slider */
+    
+    #mainSlider{
+        margin-top: 100px;
+    }
+
+    #mainSlider .carrousel-caption{
+        top: 10%;
+    }
+
+    #mainSlider .carousel-caption h2{
+        margin-top: -30px;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    
+    /* Navbar */
+
+    #nome{
+        display: none;
+    }
+}
