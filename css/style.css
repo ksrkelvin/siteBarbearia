@@ -1,0 +1,591 @@
+/* Gerais */
+@font-face {
+    font-family: cloister-black;
+    src: url('/src/fonts/CloisterBlack.ttf');
+}
+
+html{
+    scroll-behavior:smooth;
+
+}
+
+body{
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    
+}
+
+.row{
+    margin: 0;
+}
+
+p, li {
+    color:#444;
+    font-size: 14px;
+}
+
+/* Barra de navegação */
+
+[data-color], header, .navbar{
+    background-color: transparent;
+    transition: .3s;
+    
+}
+
+.navbar{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#navcontainer{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#logo{
+    width: 70px;
+}
+
+.navbar-brand{
+    padding: 0;
+    color: #fff;
+}
+
+.navbar-brand:hover{
+    color: #fff;
+}
+
+#navbarNav a {
+    color: #fff;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding: 1rem .8rem;
+}
+
+.navbar-nav > .nav-item > #contact-menu{
+    border: 3px solid #cf974f;
+    background-color: #cf974f;
+    border-radius: 15px;
+    transition: .5s;
+    
+}
+.navbar-nav > .nav-item > #contact-menu:hover{
+    border: 3px solid #cf974f;
+    background-color: transparent;
+}
+
+
+.colorNav{
+    background-color: #222;
+    
+}
+
+/* Home  */
+.home{
+    width: 100%;
+    position: relative;
+    height: 70vh;
+    background-color: #111;
+    
+   
+}
+
+#mainTextArea{
+    color: #fff;
+    width: 100%;
+    float: left;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+#textHome{position: absolute;
+    top: 0;
+    font-family: cloister-black;
+    font-size: 100px;
+    margin-top:100px;
+    margin-left: 90px;
+}
+
+#infoHome{
+    font-family: "Roboto", sans-serif;
+    position: absolute;
+    font-size: 17px;
+    bottom: 10px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    color: #fff;
+}
+
+
+#homeImage{
+    position: absolute;
+    top: 0ch;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    -webkit-mask-image: linear-gradient(to right, transparent, #111);
+    mask-image: linear-gradient(to right, transparent, #111);
+}
+
+/* Sobre a empresa */
+
+#about{
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #333;
+    padding-bottom: 50px;
+}
+
+.main-title{
+    color: #444;
+    margin: 20px 0 65px 0;
+    font-size: 40px;
+    text-align: center;    
+    margin-top: 100px;
+}
+
+.about-title{
+    margin-top: 20px;
+    font-size: 17px;
+    color: #444;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#about p{
+    line-height: 20px;
+}
+
+#local-button{
+    padding: 10px;
+    border: 3px solid #cf974f;
+    background-color: #cf974f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: .5s;   
+}
+
+#local-button i{
+    margin-left: 5px;
+}
+
+#local-button:hover{
+    color: #444;
+    background-color: transparent;
+}
+
+#about-list{
+    list-style: none;
+    padding-left: 0;
+}
+
+#about-list li{
+    line-height: 30px;
+    float: left;
+    margin: 10px;
+    padding-bottom: 40px;
+}
+
+#about-list i{
+    color: #cf974f;
+}
+/* Video */
+
+#mainVideoArea{
+    width: 100%;
+    height: 80vh;
+    background-color: #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#mainVideo{
+    width: 100%;
+    height: 100%;
+}
+
+/* Serviços */
+
+#services{
+    background-color: #f9f9f9;
+}
+
+.services-box{
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+
+.services-box i, #services h3, .services-box h4, .services-box p{
+    color: #222;
+}
+
+.services-box i, .services-box h4{
+    transition: .5s;
+}
+
+.services-box i {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.services-box h4{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.services-box:hover > i, .services-box:hover > h4 {
+    color: #cf974f;
+}
+
+/* Galery */
+
+.card{
+    margin-bottom: 30px;
+    font-family: cloister-black;
+}
+.perfil_modal{
+    cursor: pointer;
+    transition: all linear .4s;
+}
+
+.perfil_modal:hover{
+    transform: scale(1.1);
+    
+}
+
+#timeName{
+    color: #fff;
+}
+#barbers{
+    background-color: #333;
+    border-bottom: 1px solid #333;
+    padding-bottom: 40px;
+
+}
+
+.centered{
+    margin: 0 auto !important;
+}
+
+.card-body{
+    text-align: center;
+}
+
+/* modal */
+#modal_img{
+    width: 40vw;
+    border: 5px solid #fff;
+    border-radius: 10px;
+}
+.meu_modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: #0007;
+    position: fixed;
+    top:0;
+    left: 0;
+    visibility: hidden;
+    
+}
+
+.meu_modal_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#bt_close{
+    color: #fff;
+    position: absolute;
+    right: 4%;
+    top: 80px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.modal_active{
+    visibility: visible;
+    
+}
+
+.galery_link{
+    color: #fff;
+    text-decoration: underline;
+    position: absolute;
+    bottom: 200px;
+    line-height: 50px;
+    background-color: #0007;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+}
+
+.galery_link:hover{
+    color: #fff;
+}
+
+
+/* Contato */
+#contact{
+    text-align: center;
+}
+
+.contact-box{
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #cf974f ;
+}
+
+#contact-title{
+    margin-top: 50px;
+    text-align: center;
+}
+
+#contact-title h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+#contact-title h6{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.contact-box a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #444;
+}
+
+.contact-box a:hover > i{
+    color: #cf974f;
+}
+
+.contact-box i{
+    margin-right: 3px;
+    color: #444;
+}
+
+.fa-user-circle{
+    font-size: 50px;
+}
+
+.contactFinish{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.contactFinish i{
+    font-size: 50px;
+}
+
+.contactFinish a{
+    color: #444;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.contactFinish a:hover > i{
+    color: #cf974f;
+}
+
+/* Copy */
+
+#copy-area{
+    background-color: #f1f1f1;
+}
+
+#copy-area .container{
+    padding: 10px 0;
+    text-align: center;
+}
+
+#copy-area .container p{
+    margin-bottom: 0;
+}
+
+#copy-area .container a{
+    font-weight: bold;
+    color: #444;
+    text-decoration: none;
+}
+
+#copy-area .container a:hover{
+    color: #cf974f;
+}
+
+/* Responsive */
+
+@media (max-width: 768px){
+    /* geral */
+    
+    .container{
+        padding: 0;
+    }
+
+    /* Home */
+    
+    #textHome{
+        font-size: 60px;
+        width: 100%;
+      
+    }
+
+
+    /* About */
+    
+    #about img{
+        margin-top: 100px;
+    }
+
+    /* Sevices */
+
+    .rowContainer{
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .services-box{
+        width: 200px;
+    }
+
+    /* Time */
+
+    .card{
+        width: 25vw;
+    }
+
+    .card-title{
+        font-size: 14px;
+    }
+
+    .card-text{
+        font-size: 12px;
+    }
+
+}    
+
+@media(max-width: 452px){
+   
+    /* navbar */
+    #nome{
+        font-size: 16px;
+    }
+
+    /* Home */
+    
+    #textHome{
+        font-size: 50px;
+        margin-left: 10px;
+        margin-top: 150px;
+
+    }
+    
+    #homeImage{
+        width: 100%;
+        height: 80%;
+      
+    }
+
+    /* About */
+
+    .main-title{
+        font-size: 30px;
+    }
+
+    #about img{
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+    #local-button {
+        line-height: 40px;
+    }
+
+    #about-list li{
+        margin: 10px;
+        padding:0;
+        line-height: 25px;
+    }
+    
+    /* Video */
+
+    #mainVideoArea{
+        height: 50vh;
+    }
+
+    /* Time */
+    .card{
+        margin: auto;
+        margin-bottom: 30px;
+        width: 70vw;
+        
+    }
+
+    #modal_img{
+        width: 80vw;
+    }
+
+
+    /* Contato */
+
+    .contact-box{
+        border: none;
+        margin-bottom: 0;
+    }
+    #contact-title h5{
+        font-size: 30px;
+
+    }
+
+    #contact-title h6{
+        font-size: 25px;
+
+    }
+
+}
+
+@media(max-width: 400px){
+
+    /* geral */
+    p{
+        font-size: 18px;
+    }
+
+
+    .services-box{
+        margin: auto;
+    }
+
+    /* Navbar */
+
+    #nome{
+        display: none;
+    }
+}
+
+@media(max-width: 320px){
+    a{
+        font-size: 16px;
+    }
+}
+
+/* Animações */
+
+[data-anime]{
+    opacity: 0;
+    transition: .3s;
+}
+
+[data-anime="left"]{
+    transform: translate3d(-70px, 0, 0);
+}
+
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
